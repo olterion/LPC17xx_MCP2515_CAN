@@ -1,0 +1,12 @@
+#ifndef	UTILS_H
+#define	UTILS_H
+
+#include "LPC17xx.h"
+
+//#define	RESET(x)		RESET2(x)
+#define	RESET(x,y)		x->FIOCLR = (1<<y)
+
+#define SET(x)			SET2(x)
+#define SET2(x,y)		x->FIOSET = (1<<y)
+
+#endif

@@ -1,0 +1,20 @@
+#ifndef	UTILS_H
+#define	UTILS_H
+
+#include "LPC17xx.h"
+
+#define	RESET(x)		RESET2(x)
+#define	RESET2(x,y)		x->FIOCLR = (1<<y)
+
+#define SET(x)			SET2(x)
+#define SET2(x,y)		x->FIOSET = (1<<y)
+
+#define SET_OUTPUT(x)		SET_OUTPUT2(x)
+#define SET_OUTPUT2(x,y)	x->FIODIR = (1<<y)
+
+#define SET_INPUT(x)		SET_INPUT2(x)
+#define SET_INPUT2(x,y)		x->FIODIR &= !(1<<y)
+
+//_delay_ms
+
+#endif

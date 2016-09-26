@@ -1,0 +1,6 @@
+#ifndef	UTILS_H
+#define	UTILS_H
+
+#define	RESET(x)		RESET2(x)
+#define	RESET2(x,y)		LPC_GPIO(x)->FIOCLR = (1<<y)
+#endif

@@ -1,0 +1,145 @@
+23:17:18 **** Incremental Build of configuration Debug for project CMSISv2p00_LPC17xx ****
+make -r all 
+make: Nothing to be done for `all'.
+23:17:23 **** Incremental Build of configuration Debug for project can-lib ****
+make -r all 
+Building file: ../src/can_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/can_buffer.d" -MT"src/can_buffer.o" -MT"src/can_buffer.d" -o "src/can_buffer.o" "../src/can_buffer.c"
+Finished building: ../src/can_buffer.c
+ 
+Building file: ../src/mcp2515.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515.d" -MT"src/mcp2515.o" -MT"src/mcp2515.d" -o "src/mcp2515.o" "../src/mcp2515.c"
+../src/mcp2515.c: In function 'can_init':
+../src/mcp2515.c:197:2: warning: implicit declaration of function '_delay_ms' [-Wimplicit-function-declaration]
+  _delay_ms(1);
+  ^
+../src/mcp2515.c:210:12: warning: passing argument 1 of 'spi_putc' makes integer from pointer without a cast
+   spi_putc(&_mcp2515_cnf[bitrate][i]);
+            ^
+In file included from ../src/mcp2515_private.h:54:0,
+                 from ../src/mcp2515.c:50:
+../src/spi.h:57:16: note: expected 'uint8_t' but argument is of type 'uint8_t *'
+ extern uint8_t spi_putc(uint8_t data);
+                ^
+../src/mcp2515.c:247:34: warning: comparison between pointer and integer
+  if (mcp2515_read_register(CNF2) != &_mcp2515_cnf[bitrate][1]) {
+                                  ^
+Finished building: ../src/mcp2515.c
+ 
+Building file: ../src/mcp2515_buffer.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_buffer.d" -MT"src/mcp2515_buffer.o" -MT"src/mcp2515_buffer.d" -o "src/mcp2515_buffer.o" "../src/mcp2515_buffer.c"
+Finished building: ../src/mcp2515_buffer.c
+ 
+Building file: ../src/mcp2515_error_register.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_error_register.d" -MT"src/mcp2515_error_register.o" -MT"src/mcp2515_error_register.d" -o "src/mcp2515_error_register.o" "../src/mcp2515_error_register.c"
+Finished building: ../src/mcp2515_error_register.c
+ 
+Building file: ../src/mcp2515_get_dyn_filter.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_get_dyn_filter.d" -MT"src/mcp2515_get_dyn_filter.o" -MT"src/mcp2515_get_dyn_filter.d" -o "src/mcp2515_get_dyn_filter.o" "../src/mcp2515_get_dyn_filter.c"
+Finished building: ../src/mcp2515_get_dyn_filter.c
+ 
+Building file: ../src/mcp2515_get_message.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_get_message.d" -MT"src/mcp2515_get_message.o" -MT"src/mcp2515_get_message.d" -o "src/mcp2515_get_message.o" "../src/mcp2515_get_message.c"
+Finished building: ../src/mcp2515_get_message.c
+ 
+Building file: ../src/mcp2515_read_id.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_read_id.d" -MT"src/mcp2515_read_id.o" -MT"src/mcp2515_read_id.d" -o "src/mcp2515_read_id.o" "../src/mcp2515_read_id.c"
+In file included from ../src/mcp2515_private.h:54:0,
+                 from ../src/mcp2515_read_id.c:31:
+../src/spi.h: In function 'spi_wait':
+../src/spi.h:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/mcp2515_read_id.c
+ 
+Building file: ../src/mcp2515_regdump.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_regdump.d" -MT"src/mcp2515_regdump.o" -MT"src/mcp2515_regdump.d" -o "src/mcp2515_regdump.o" "../src/mcp2515_regdump.c"
+../src/mcp2515_regdump.c: In function 'mcp2515_regdump':
+../src/mcp2515_regdump.c:44:2: warning: implicit declaration of function 'printf_P' [-Wimplicit-function-declaration]
+  printf_P("MCP2515 Regdump:\n");
+  ^
+Finished building: ../src/mcp2515_regdump.c
+ 
+Building file: ../src/mcp2515_send_message.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_send_message.d" -MT"src/mcp2515_send_message.o" -MT"src/mcp2515_send_message.d" -o "src/mcp2515_send_message.o" "../src/mcp2515_send_message.c"
+../src/mcp2515_send_message.c: In function 'can_send_message':
+../src/mcp2515_send_message.c:95:2: warning: implicit declaration of function '_delay_us' [-Wimplicit-function-declaration]
+  _delay_us(1);
+  ^
+Finished building: ../src/mcp2515_send_message.c
+ 
+Building file: ../src/mcp2515_set_dyn_filter.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_set_dyn_filter.d" -MT"src/mcp2515_set_dyn_filter.o" -MT"src/mcp2515_set_dyn_filter.d" -o "src/mcp2515_set_dyn_filter.o" "../src/mcp2515_set_dyn_filter.c"
+../src/mcp2515_set_dyn_filter.c: In function 'can_set_filter':
+../src/mcp2515_set_dyn_filter.c:108:3: warning: implicit declaration of function '_delay_us' [-Wimplicit-function-declaration]
+   _delay_us(1);
+   ^
+Finished building: ../src/mcp2515_set_dyn_filter.c
+ 
+Building file: ../src/mcp2515_set_mode.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_set_mode.d" -MT"src/mcp2515_set_mode.o" -MT"src/mcp2515_set_mode.d" -o "src/mcp2515_set_mode.o" "../src/mcp2515_set_mode.c"
+Finished building: ../src/mcp2515_set_mode.c
+ 
+Building file: ../src/mcp2515_sleep.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_sleep.d" -MT"src/mcp2515_sleep.o" -MT"src/mcp2515_sleep.d" -o "src/mcp2515_sleep.o" "../src/mcp2515_sleep.c"
+Finished building: ../src/mcp2515_sleep.c
+ 
+Building file: ../src/mcp2515_static_filter.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_static_filter.d" -MT"src/mcp2515_static_filter.o" -MT"src/mcp2515_static_filter.d" -o "src/mcp2515_static_filter.o" "../src/mcp2515_static_filter.c"
+../src/mcp2515_static_filter.c: In function 'can_static_filter':
+../src/mcp2515_static_filter.c:59:13: warning: passing argument 1 of 'spi_putc' makes integer from pointer without a cast
+    spi_putc(filter++);
+             ^
+In file included from ../src/mcp2515_private.h:54:0,
+                 from ../src/mcp2515_static_filter.c:31:
+../src/spi.h:57:16: note: expected 'uint8_t' but argument is of type 'const uint8_t *'
+ extern uint8_t spi_putc(uint8_t data);
+                ^
+Finished building: ../src/mcp2515_static_filter.c
+ 
+Building file: ../src/mcp2515_write_id.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/mcp2515_write_id.d" -MT"src/mcp2515_write_id.o" -MT"src/mcp2515_write_id.d" -o "src/mcp2515_write_id.o" "../src/mcp2515_write_id.c"
+../src/mcp2515_write_id.c: In function 'spi_wait':
+../src/mcp2515_write_id.c:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/mcp2515_write_id.c
+ 
+Building file: ../src/spi.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__USE_CMSIS=CMSISv2p00_LPC17xx -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"src/spi.d" -MT"src/spi.o" -MT"src/spi.d" -o "src/spi.o" "../src/spi.c"
+../src/spi.c: In function 'spi_putc':
+../src/spi.c:119:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/spi.c
+ 
+Building target: can-lib.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\CMSISv2p00_LPC17xx\Debug" -Xlinker -Map=can-lib.map -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "LPCXpresso1768_systick_Debug.ld" -o "can-lib.axf"  ./src/can_buffer.o ./src/cr_startup_lpc176x.o ./src/main.o ./src/mcp2515.o ./src/mcp2515_buffer.o ./src/mcp2515_error_register.o ./src/mcp2515_get_dyn_filter.o ./src/mcp2515_get_message.o ./src/mcp2515_read_id.o ./src/mcp2515_regdump.o ./src/mcp2515_send_message.o ./src/mcp2515_set_dyn_filter.o ./src/mcp2515_set_mode.o ./src/mcp2515_sleep.o ./src/mcp2515_static_filter.o ./src/mcp2515_write_id.o ./src/spi.o ./src/timer.o   -lCMSISv2p00_LPC17xx
+c:/nxp/lpcxpresso_7.9.2_493/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld.exe: Linker CRP Enabled, but no CRP_WORD provided within application
+./src/mcp2515_read_id.o: In function `mcp2515_read_id':
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:48: undefined reference to `spi_start'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:51: undefined reference to `spi_wait'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:52: undefined reference to `spi_start'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:57: undefined reference to `spi_wait'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:62: undefined reference to `spi_start'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:69: undefined reference to `spi_wait'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:70: undefined reference to `spi_start'
+C:\Users\Olli\CloudStation\uC_Stuff\LPC_workspaces\LPC17xx_MCP2515_CAN\can-lib\Debug/../src/mcp2515_read_id.c:74: undefined reference to `spi_wait'
+collect2.exe: error: ld returned 1 exit status
+make: *** [can-lib.axf] Error 1

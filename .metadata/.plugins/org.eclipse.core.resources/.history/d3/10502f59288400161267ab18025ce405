@@ -1,0 +1,8 @@
+#ifndef	UTILS_H
+#define	UTILS_H
+
+#include "LPC17xx.h"
+
+#define	RESET(x)		RESET2(x)
+#define	RESET2(x,y)		LPC_GPIO0->FIOCLR = (1<<y)
+#endif
